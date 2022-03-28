@@ -25,6 +25,11 @@ switch (lang){
     break;
 }
 
+let langArray = [];
+langArray["ru"] = ["Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Вокресенье"];
+langArray["en"] = ["Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday"];
+console.log(langArray[lang]);
+
 
 let namePerson = prompt("Введите имя");
 
