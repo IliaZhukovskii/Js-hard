@@ -1,14 +1,36 @@
-let num = 266219;
+'use strict';
 
-let newNum = num.toString();
-let rez1 = newNum.split('').reduce(function(acc, item){
-return acc = acc * item}, 1);
-console.log("Результат произведения цифр:  " + rez1 );
-
-let rez2 = rez1 ** 3;
-
-let rez3 = rez2.toString();
-console.log("Первый две цифры раннее поллученного числа  " + rez2 + " такие: " + rez3.substring(0, 2));
+let quest = confirm("Продолжить на русском языке?");
+let lang;
+if( quest == true){
+   lang = "ru";
+}else{
+   lang = "en";
+}
 
 
+if(lang == "ru"){
+  console.log("if:  Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Вокресенье");
+}else{
+  console.log("if:  Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday");
+}
 
+
+switch (lang){
+  case "ru":
+    console.log("switch:  Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Вокресенье");
+    break;
+  case "en":
+    console.log("switch:  Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday");  
+    break;
+}
+
+
+let namePerson = prompt("Введите имя");
+
+let message = 
+(namePerson == 'Артем') ? "директор" : 
+(namePerson == 'Александр') ? "преподаватель" : 
+"студент";
+
+console.log(message);
