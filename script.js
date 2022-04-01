@@ -9,8 +9,7 @@ for (let key of week) {
 
   if (key === week[day]) {
     key = "<b>" + key + "</b>";
-  } 
-  if (key === 'Суббота' || key === 'Воскресенье') {
+  } else if (key === 'Суббота' || key === 'Воскресенье') {
     key = "<i>" + key + "<i>";
   }
 
